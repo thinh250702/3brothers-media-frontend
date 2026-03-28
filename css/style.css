@@ -742,6 +742,7 @@ footer ul a, .page-heading ul a {
 }
 
 .blog-item > p {
+  color: var(--neutral-grey-500);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
