@@ -1550,9 +1550,15 @@ footer ul a, .page-heading ul a {
   aspect-ratio: 21/9;
   width: 100%;
   height: auto;
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
+}
+
+@media (max-width: 576px) {
+  .map-wrapper {
+    aspect-ratio: 1/1;
+  }
 }
 
 .map-wrapper > iframe {
