@@ -290,7 +290,7 @@ header a {
   bottom: 0;
   width: 0;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--neutral-white-950);
   transition: all .35s ease;
   transform: translateX(-50%)
 }
@@ -617,7 +617,6 @@ footer ul a, .page-heading ul a {
   left: 0;
   right: 0;
   z-index: -1;
-  background-color: red;
 }
 
 .contact-form__bg > video {
@@ -1428,7 +1427,6 @@ footer ul a, .page-heading ul a {
 }
 
 .latest-news-item__img {
-  background-color: yellow;
   aspect-ratio: 4/3;
   width: 33.33%;
   height: auto;
