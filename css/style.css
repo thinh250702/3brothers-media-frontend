@@ -604,25 +604,27 @@ footer ul a, .page-heading ul a {
   height: 100%;
   mix-blend-mode: soft-light;
   opacity: .4;
-  /* width: 100%;
-  height: auto;
-  z-index: 0;
-  top: 50%;
-  left: 50%; */
-  /* transform: scale(1.03) translate(-50%, -38%); */
-  /* mix-blend-mode: soft-light;
-  opacity: .4; */
 }
-
-.contact-form {
-  background-image: url(../img/contact-form-bg.png);
-  background-position: center center;
-  background-size: cover;
-}
-
 
 .contact-form__heading {
   color: var(--neutral-white-950);
+}
+
+.contact-form__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: red;
+}
+
+.contact-form__bg > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .form-wrapper {
@@ -1053,14 +1055,13 @@ footer ul a, .page-heading ul a {
 
 .core-values__decor {
   position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 0;
+  aspect-ratio: 1118/641;
   top: 50%;
   left: 50%;
-  transform: scale(1.03) translate(-50%, -38%);
+  transform: scale(1.03) translate(-50%, -50%);
+  height: 100%;
   mix-blend-mode: soft-light;
-  opacity: .6;
+  opacity: .4;
 }
 
 .core-values__card {
@@ -1127,6 +1128,10 @@ footer ul a, .page-heading ul a {
   bottom: 16px;
   padding: 16px 20px;
   border-radius: 12px;
+}
+
+.team-card__info > h3 {
+  color: var(--brand-primary-700);
 }
 
 .team-card__links {
@@ -1267,7 +1272,8 @@ footer ul a, .page-heading ul a {
     gap: 20px !important;
   }
   .our-community-card__main > h3 {
-    font-size: 56px;
+    font-size: 32px !important;
+    line-height: 40px;
   }
 }
 
@@ -1306,6 +1312,14 @@ footer ul a, .page-heading ul a {
   align-items: flex-start;
   padding-right: 40px;
   padding-left: 16px;
+}
+
+.our-community-card__main > h3 {
+  font-size: 40px;
+}
+
+.our-community-card__main > p {
+  color: var(--neutral-grey-500);
 }
 
 .our-community-card__main div > span:first-child {
@@ -1437,10 +1451,16 @@ footer ul a, .page-heading ul a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: all .3s ease;
+}
+
+.latest-news-item__content > a:hover {
+  color: var(--brand-primary-700)
 }
 
 .latest-news-item__content > span {
   color: var(--neutral-grey-600);
+  font-size: 14px;
 }
 
 .careers-item {
